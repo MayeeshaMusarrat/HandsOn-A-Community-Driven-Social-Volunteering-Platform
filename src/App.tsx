@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SignupPage from "./signup-page.tsx";
+import SignupPage from "./screens/signup-page.tsx";
+import DashboardPage from "./screens/dashboard.tsx";
 
 const App: React.FC = () => {
   return (
@@ -8,6 +9,7 @@ const App: React.FC = () => {
       <Router>
         <Routes>
           <Route path="/" element={<SignupPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
         </Routes>
       </Router>
     </div>
